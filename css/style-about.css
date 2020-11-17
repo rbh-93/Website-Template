@@ -1,0 +1,145 @@
+/*make margin and padding 0 for all elements*/
+*,html,body
+{
+	margin:0;
+	padding:0;	
+}
+
+body
+{
+	height:1200px;
+	
+}
+
+/*give background-color, height to header
+ line-height defines the amount of space above 
+ and below inline elements */
+/*An element with position: fixed; is positioned 
+relative to the viewport, which means it always stays in 
+the same place even if the page is scrolled.
+z-index:1 brings the layer to the front*/
+header
+{
+	height:150px;
+	width:100%;
+	line-height:150px;
+	position:fixed;
+	z-index:1;
+}
+
+
+
+/*secondary class is to make header background*/
+.secondary
+{
+	background-color:deepskyblue;
+	box-shadow: 0px 0px 17px 6px;
+	transition: all 0.5s ease-in;
+}
+
+/*make menu list without bullets*/
+ul
+{
+	list-style:none;
+}
+
+/*make menu list elements inline-block i.e., grid of 
+ boxes that fills the browser width and wraps nicely.
+ inline-block elements are like inline elements but 
+ they can have a width and height.*/
+ul li
+{
+	display: inline-block;
+}
+
+/*place menu list elements in the right side*/
+header nav
+{
+	float: right;
+}
+
+/*give right padding to menu list elements.
+font-weight makes the list items bold.
+*/
+header nav ul li a
+{
+	padding-right:30px;
+	font-weight:bold;
+	color:black;
+	transition: all 0.5s ease-in;
+	
+}
+
+
+
+/*remove the underline when mouse is 
+hovered above the menu items.
+*/
+header nav ul li a:hover
+{
+	text-decoration:none;
+	color:red;
+}
+
+.about-us{
+	height:100%;
+	background-position:center;
+	background-attachment:fixed;
+	padding:100px 0px;
+	padding-left:0px;
+	background-color:#91ddfa;
+	
+}
+
+.heading{
+	padding-top:100px;
+	text-align:center;
+	font-weight:bold;
+	color: black;
+
+}
+
+.subheading{
+	padding-top:1px;
+	text-align:center;
+	color:black;
+}
+
+.content{
+	padding-top:50px;
+	color:black;
+}
+
+.btn-half
+{
+	background-color:deepskyblue;
+	color: white;
+	transition: 0.5s ease-in;
+	margin-right: 20px;
+	width:100px;
+}
+
+.btn-half:hover
+{
+	opacity:0.7;	
+	background-color: DodgerBlue;
+}
+
+.btn-full
+{
+	background-color:orange;
+	color: white;
+	transition: 0.5s ease-in;
+	margin-right: 20px;
+	width:100px;
+}
+
+.btn-full:hover
+{
+	opacity:0.7;
+	background-color: DarkOrange;
+}
+
+.button{
+	text-align:center;
+}
